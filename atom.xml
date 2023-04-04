@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-03-26T14:54:34.888Z</updated>
+  <updated>2023-04-04T16:36:39.635Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,18 +17,19 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
+    <title>深入学习typeScript</title>
     <link href="http://example.com/2023/03/26/hello-world/"/>
     <id>http://example.com/2023/03/26/hello-world/</id>
     <published>2023-03-26T14:54:34.888Z</published>
-    <updated>2023-03-26T14:54:34.888Z</updated>
+    <updated>2023-04-04T16:36:39.635Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>在当今前端圈内，如果你如果还不会typescript，那么你就不是一名合格的前端工程师。有的人说typescript有啥难的，不会的直接使用 <font color=#008000><em>any</em></font>替代，AnyScript就完事了。</p><p><img src="https://img9.doubanio.com/view/richtext/large/public/p34066865.jpg" alt="图片"></p><p>如果你使用了any，那其实跟使用JavaScript写代码并没有什么区别。<br>那typescript相对于JavaScript都有哪些区别呢</p><table><thead><tr><th>typescript</th><th>javascript</th></tr></thead><tbody><tr><td>JavaScript 的超集用于解决大型项目的代码复杂性</td><td>一种脚本语言，用于创建动态网页。</td></tr><tr><td>可以在编译期间发现并纠正错误</td><td>作为一种解释型语言，只能在运行时发现错误</td></tr><tr><td>强类型，支持静态和动态类型</td><td>弱类型，没有静态类型选项</td></tr><tr><td>可以在编译期间发现并纠正错误</td><td>作为一种解释型语言，只能在运行时发现错误</td></tr><tr><td>最终被编译成 JavaScript 代码，使浏览器可以理解</td><td>可以直接在浏览器中使用</td></tr><tr><td>支持模块、泛型和接口</td><td>不支持模块，泛型或接口</td></tr></tbody></table><p>通过对比我们可以发现：</p><ol><li><strong>使用ts更容易发现代码bug。</strong> js是动态语言，要运行的时候才能发现程序错误，而ts要编译后才能使用，在编译时如果有类型错误就会被编译器发现。</li><li><strong>代码可预测。</strong> JavaScript 的变量可以赋予任何类型的值。有时候，我们会看到一个变量在执行的过程中变成各种各样的类型，一会是字符串，一会是对象，非常不好预测，尤其是有复杂条件判断的时候。但在typescript中，变量一旦确立了类型就不能被改变，这样的变量就具有可预测性</li><li>此外，<strong>主流的IDE都支持typescript代码提示和自动补全</strong></li></ol><p>为什么typescript能比JavaScript强大这么多？主要是因为typescript具有完备的类型系统。可以说，学ts，主要就是学习ts的类型系统。</p><p>ts的类型系统主要支持下面几种功能：</p><ul><li><strong>简单的类型系统</strong></li><li><strong>泛型的类型系统</strong></li><li><strong>类型编程的类型系统（类型体操）</strong></li></ul><h2 id="简单的类型系统"><a href="#简单的类型系统" class="headerlink" title="简单的类型系统"></a>简单的类型系统</h2><p>ts的基础类型我就不过多介绍了，网上这方面的文章很多。可以参考：</p><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="https://mp.weixin.qq.com/s/0c7XmwHDycdfQHKScSfFeQ">https://mp.weixin.qq.com/s/0c7XmwHDycdfQHKScSfFeQ</a></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;p&gt;在当今前端圈内，如果你如果还不会typescript，那么你就不是一名合格的前端工程师。有的人说typescript有啥难的，不会的直接使用 &lt;font color=#008000&gt;&lt;em&gt;any&lt;/em&gt;&lt;/font&gt;替代，AnyScript就完事了。&lt;/p&gt;
+&lt;p&gt;&lt;i</summary>
       
     
     
