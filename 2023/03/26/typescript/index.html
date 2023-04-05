@@ -16,23 +16,23 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="在当今前端圈内，如果你如果还不会typescript，那么你就不是一名合格的前端工程师。有的人说typescript有啥难的，不会的直接使用 any替代，AnyScript就完事了。  如果你使用了any，那其实跟使用JavaScript写代码并没有什么区别。那typescript相对于JavaScript都有哪些区别呢    typescript javascript    JavaScript">
+    <meta name="description" content="前言在当今前端圈内，如果你如果还不会 typescript，那么你就不是一名合格的前端工程师。有的人说 typescript 有啥难的，不会的直接使用 any替代，AnyScript 就完事了。  如果你使用了 any，那其实跟使用 JavaScript 写代码并没有什么区别。那 typescript 相对于 JavaScript 都有哪些区别呢:    typescript javascript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="深入学习typeScript">
-<meta property="og:url" content="http://example.com/2023/03/26/hello-world/index.html">
+<meta property="og:title" content="typescript类型体操我也能跳了">
+<meta property="og:url" content="http://example.com/2023/03/26/typescript/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="在当今前端圈内，如果你如果还不会typescript，那么你就不是一名合格的前端工程师。有的人说typescript有啥难的，不会的直接使用 any替代，AnyScript就完事了。  如果你使用了any，那其实跟使用JavaScript写代码并没有什么区别。那typescript相对于JavaScript都有哪些区别呢    typescript javascript    JavaScript">
+<meta property="og:description" content="前言在当今前端圈内，如果你如果还不会 typescript，那么你就不是一名合格的前端工程师。有的人说 typescript 有啥难的，不会的直接使用 any替代，AnyScript 就完事了。  如果你使用了 any，那其实跟使用 JavaScript 写代码并没有什么区别。那 typescript 相对于 JavaScript 都有哪些区别呢:    typescript javascript">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://img9.doubanio.com/view/richtext/large/public/p34066865.jpg">
 <meta property="article:published_time" content="2023-03-26T14:54:34.888Z">
-<meta property="article:modified_time" content="2023-04-04T16:36:39.635Z">
+<meta property="article:modified_time" content="2023-04-05T15:44:20.158Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://img9.doubanio.com/view/richtext/large/public/p34066865.jpg">
   
   
   
-  <title>深入学习typeScript - Hexo</title>
+  <title>typescript类型体操我也能跳了 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -199,7 +199,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="深入学习typeScript"></span>
+            <span id="subtitle" data-typed-text="typescript类型体操我也能跳了"></span>
           
         </div>
 
@@ -222,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          838 字
+          1.2k 字
         
       </span>
     
@@ -233,7 +233,7 @@
         
         
         
-          7 分钟
+          10 分钟
         
       </span>
     
@@ -271,14 +271,14 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">深入学习typeScript</h1>
+            <h1 style="display: none">typescript类型体操我也能跳了</h1>
             
             
               <div class="markdown-body">
                 
-                <p>在当今前端圈内，如果你如果还不会typescript，那么你就不是一名合格的前端工程师。有的人说typescript有啥难的，不会的直接使用 <font color=#008000><em>any</em></font>替代，AnyScript就完事了。</p>
+                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在当今前端圈内，如果你如果还不会 typescript，那么你就不是一名合格的前端工程师。有的人说 typescript 有啥难的，不会的直接使用 <font color=#008000><em>any</em></font>替代，AnyScript 就完事了。</p>
 <p><img src="https://img9.doubanio.com/view/richtext/large/public/p34066865.jpg" srcset="/img/loading.gif" lazyload alt="图片"></p>
-<p>如果你使用了any，那其实跟使用JavaScript写代码并没有什么区别。<br>那typescript相对于JavaScript都有哪些区别呢</p>
+<p>如果你使用了 any，那其实跟使用 JavaScript 写代码并没有什么区别。<br>那 typescript 相对于 JavaScript 都有哪些区别呢:</p>
 <table>
 <thead>
 <tr>
@@ -313,19 +313,23 @@
 </tbody></table>
 <p>通过对比我们可以发现：</p>
 <ol>
-<li><strong>使用ts更容易发现代码bug。</strong> js是动态语言，要运行的时候才能发现程序错误，而ts要编译后才能使用，在编译时如果有类型错误就会被编译器发现。</li>
-<li><strong>代码可预测。</strong> JavaScript 的变量可以赋予任何类型的值。有时候，我们会看到一个变量在执行的过程中变成各种各样的类型，一会是字符串，一会是对象，非常不好预测，尤其是有复杂条件判断的时候。但在typescript中，变量一旦确立了类型就不能被改变，这样的变量就具有可预测性</li>
-<li>此外，<strong>主流的IDE都支持typescript代码提示和自动补全</strong></li>
+<li><strong>使用 ts 更容易发现代码 bug。</strong> js 是动态语言，要运行的时候才能发现程序错误，而 ts 要编译后才能使用，在编译时如果有类型错误就会被编译器发现。</li>
+<li><strong>代码可预测。</strong> JavaScript 的变量可以赋予任何类型的值。有时候，我们会看到一个变量在执行的过程中变成各种各样的类型，一会是字符串，一会是对象，非常不好预测，尤其是有复杂条件判断的时候。但在 typescript 中，变量一旦确立了类型就不能被改变，这样的变量就具有可预测性</li>
+<li>此外，<strong>主流的 IDE 都支持 typescript 代码提示和自动补全</strong></li>
 </ol>
-<p>为什么typescript能比JavaScript强大这么多？主要是因为typescript具有完备的类型系统。可以说，学ts，主要就是学习ts的类型系统。</p>
-<p>ts的类型系统主要支持下面几种功能：</p>
+<p>为什么 typescript 能比 JavaScript 强大这么多？主要是因为 typescript 具有完备的类型系统。可以说，学 ts，主要就是学习 ts 的类型系统。</p>
+<p>ts 的类型系统主要分为下面3类：</p>
 <ul>
 <li><strong>简单的类型系统</strong></li>
 <li><strong>泛型的类型系统</strong></li>
 <li><strong>类型编程的类型系统（类型体操）</strong></li>
 </ul>
-<h2 id="简单的类型系统"><a href="#简单的类型系统" class="headerlink" title="简单的类型系统"></a>简单的类型系统</h2><p>ts的基础类型我就不过多介绍了，网上这方面的文章很多。可以参考：</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/0c7XmwHDycdfQHKScSfFeQ">https://mp.weixin.qq.com/s/0c7XmwHDycdfQHKScSfFeQ</a></p>
+<p>简单的类型和泛型更偏基础，基本每个学过ts的人都接触过，这里就不多介绍了。如果你还不是很了解，可以看下这篇文章: <a target="_blank" rel="noopener" href="https://juejin.cn/post/7018805943710253086#heading-0">typescript史上最强学习入门文章(2w字)</a></p>
+<h2 id="类型编程（类型体操）"><a href="#类型编程（类型体操）" class="headerlink" title="类型编程（类型体操）"></a>类型编程（类型体操）</h2><p>类型编程是针对类型参数，也就是泛型（类型参数）来说的，传入类型参数，经过一系列类型运算逻辑后，返回新的类型就叫做高级类型。这是ts的强大之处，也是复杂之处。类型编程在许多类库中都是必不可少的，因为只有把类型编程写好了，使用者在使用类库的时候才能在IDE中获取到代码提示</p>
+<p>如果你对你的类型编程很有兴趣，可以在空余时间刷刷  <a target="_blank" rel="noopener" href="https://github.com/type-challenges/type-challenges">type-challenges</a> 。如果能把里面的题目都搞懂，那我相信今后任何ts类型体操相关的题目都无法再难住你了。</p>
+<p>类型体操做多了之后，你就会发现所有的类型体操基本都可以用下面几个方法来实现：</p>
+<h3 id="使用模式匹配提取值"><a href="#使用模式匹配提取值" class="headerlink" title="使用模式匹配提取值"></a>使用模式匹配提取值</h3><h3 id="重新构造生成新的类型"><a href="#重新构造生成新的类型" class="headerlink" title="重新构造生成新的类型"></a>重新构造生成新的类型</h3><h3 id="循环递归"><a href="#循环递归" class="headerlink" title="循环递归"></a>循环递归</h3><h3 id="使用数组长度作为计数"><a href="#使用数组长度作为计数" class="headerlink" title="使用数组长度作为计数"></a>使用数组长度作为计数</h3><h3 id="分布式条件运算"><a href="#分布式条件运算" class="headerlink" title="分布式条件运算"></a>分布式条件运算</h3><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/0c7XmwHDycdfQHKScSfFeQ">了不起的 TypeScript 入门教程</a></p>
+<p><a target="_blank" rel="noopener" href="https://juejin.cn/post/7018805943710253086#heading-0">typescript史上最强学习入门文章(2w字)</a></p>
 
                 
               </div>
@@ -343,8 +347,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>深入学习typeScript</div>
-      <div>http://example.com/2023/03/26/hello-world/</div>
+      <div>typescript类型体操我也能跳了</div>
+      <div>http://example.com/2023/03/26/typescript/</div>
     </div>
     <div class="license-meta">
       
